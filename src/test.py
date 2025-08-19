@@ -6,7 +6,7 @@ import numpy as np
 # model = joblib.load('xgboost_model.pkl') 
 model = joblib.load('lgbm_model.pkl') 
 
-test_data = pd.read_csv('../data/test.csv')
+test_data = pd.read_csv('../data/test_preprocessed.csv')
 X_test = test_data.drop(columns=['active_power'])
 y_test = test_data['active_power']
 
